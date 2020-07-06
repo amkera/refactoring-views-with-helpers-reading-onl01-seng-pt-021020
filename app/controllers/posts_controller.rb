@@ -12,7 +12,6 @@ class PostsController < ApplicationController
 	end
 
 	def create
-	  #byebug
 	  @post = Post.new(params)
 	  @post.save
 	  redirect_to post_path(@post)
